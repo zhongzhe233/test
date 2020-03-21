@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 包含css样式，title标签，js代码 -->
+    <meta charset="UTF-8">
+    <title>学习</title>
+    <base>
+</head>
+
+<body>
+    <!--页面主要内容-->
+    <a href="#zz">zz</a>
+<button onclick="alert('警告信息')"></button>
+
+<br/>
+</body>
+<body>
+    <!-- 标签a是一个拦截，href是链接 -->
+    <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+    <hr><!--水平分割线-->
+ 
+    <a id="zz">as</a>
+    <br>
+    <p>asdaaaass</p><p>zzzzzzzz</p>
+</body>
+
+<body>
+
+<img src="./a.png" width="200px"height="200px" border="1" alt="找不到"/>
+
+</body>
+
+
+<!-- 页面内局部跳转 -->
+<body>
+    <iframe src="练习.html" width="500px" height="500px" name="abc"> </iframe>
+    <a href="./test.html" target="abc">zxzz</a>
+</body>
+
+<body>
+    <!-- 表单 -->
+    <form>
+        用户名称：<input type="text" value="默认值"/>
+        密码<input type="password"/>
+            <!-- name属性可以进行分组 -->
+        性别<input type="radio" name="sex" checked="checked"/>男<input type="radio" name="sex"/>女
+        复选框<input type="checkbox"/>java<input type="checkbox"/>python<input type="checkbox"/>c++
+        <!-- 下拉列表 -->
+        <select>
+            <option>请选择国籍</option>
+            <option selected="selected">中国</option>
+            <option>美国</option>
+            <option>日本</option>
+        </select>
+        <!-- 多行文本输入 rows 高度-->
+        <textarea rows="4" >我是默认值</textarea>
+        <input type="reset" value="改为默认值"/>
+        <input type="submit"/>
+        <input type="file" value="./a.png"/>
+        <input type="hidden" name="asd"/>
+    </form>
+</body>
+</html>
