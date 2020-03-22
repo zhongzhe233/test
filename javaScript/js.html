@@ -8,9 +8,24 @@
         function onloadfun() {
             alert("静态");
         }
+        function onClick() {
+            //静态
+            alert("onclick事件");
+        }
 
         window.onload = function(){
             alert("动态");
+       
+        
+        // 动态注册的onclick事件
+        /*获取标签对象document
+        getElementById("id")
+        注册事件
+          */      
+        var onclbj = document.getElementById("but");
+        onclbj.onclick = function () {
+            alert("动态onclick事件");
+            }
         }
     </script>
 
@@ -25,7 +40,8 @@
 -->
 <body>
 
-
+    <button onclick="onClick()"> 静态onclick事件</button>
+    <button id="but">动态注册的onclick事件</button>
 </body>
 
 
