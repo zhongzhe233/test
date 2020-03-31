@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        function onsubfun(){
+            var usenameobj = document.getElementById("xm");
+            var usenametext = usenameobj.value
+            var patt = /^\w{5,12}$/;//允许数字，字母，下划线5~12位
+            var tishi = document.getElementById("tishi");
+            if(patt.test(usenametext)){
+                alert("注册成功，即将跳转");
+                return true;
+            }
+            else{
+                tishi.innerHTML = "<img src=\"../../html标签/a.png\" width=\"20\" height=\"20\"> 不合法";
+               return false;
+            }
+        }
+    </script>
+    
+</head>
+
+    <body>
+        <form action="http://localhost:8080/" method="GET" onsubmit="return onsubfun();">
+            用户名<input type="text" id="xm" value="请输入用户名"/>
+            <span id="tishi" style="color: red;">
+
+            </span>
+            <br/>
+            密码<input type="password" id="mm"/>
+            提交1<input type="submit" />
+        </form>
+
+    </body>
+
+</html>

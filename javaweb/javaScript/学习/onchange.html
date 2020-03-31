@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        function onch() {
+            console.log("静态onchange");
+        }
+
+        window.onload = function () {
+            var onch = document.getElementById("id");
+            onch.onchange = function () {
+                console.log("动态onchange");
+            }
+        }
+    </script>
+</head>
+    <body>
+        <select onchange="onch();">
+            <option>
+                ---1---
+            </option>
+            <option>
+                ---2---
+            </option>
+            <option>
+                ---3---
+            </option>
+        </select>
+        <select id="id">
+            <option>
+                ---a---
+            </option>
+            <option>
+                ---b---
+            </option>
+            <option>
+                ---c---
+            </option>
+        </select>
+
+
+    </body>
+
+</html>

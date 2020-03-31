@@ -1,0 +1,25 @@
+/*标签选择器
+ div{
+    border:1px red solid;
+    color: blue;
+    font-size: 30px;
+}
+span{
+    border:1px red dashed;
+    color: rgb(40, 40, 185);
+    font-size: 30px;
+} */
+
+/* ID选择器 */
+
+#id1{
+    font-size: 30px;
+    border: solid red 1px;
+    color:pink;
+}
+#id2{
+    color:gray;
+}
+
+/* class类型选择器 */
+

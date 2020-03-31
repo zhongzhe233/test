@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>asd</h1>
+        <img  v-bind:src="imgURL" alt="">
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+            imgURL:'https://i0.hdslb.com/bfs/album/1bbeecee1b948dda949c9d866385806d62088c55.jpg',
+                message: '你好'
+            }
+        })
+    </script>
+</body >
+
+</html>

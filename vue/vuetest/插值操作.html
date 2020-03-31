@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+</head>
+
+<body>
+    <div id="app">
+        <h1 v-once>{{count}}</h1>
+        <h2 v-html="url"></h2>
+    </div>
+
+    <script src="./js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                count:0,
+                url:'<a href="http://baidu.com">百度一下</a>'
+            },
+            method:{
+
+            }
+        }) 
+    </script>
+
+
+</body>
+
+</html>

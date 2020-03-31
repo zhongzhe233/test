@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <!-- <script type="text/javascript"  src="./test.js"></script> -->
+    <script type="text/javascript">
+        function onloadfun() {
+            alert("静态");
+        }
+        function onClick() {
+            //静态
+            alert("onclick事件");
+        }
+
+        window.onload = function(){
+            alert("动态");
+       
+        
+        // 动态注册的onclick事件
+        /*获取标签对象document
+        getElementById("id")
+        注册事件
+          */      
+        var onclbj = document.getElementById("but");
+        onclbj.onclick = function () {
+            alert("动态onclick事件");
+            }
+        }
+    </script>
+
+
+
+
+</head>
+
+<!-- 今天注册onload事件 
+    onload是浏览器解析完页面后自动执行
+    <body onload="onloadfun();">
+-->
+<body>
+
+    <button onclick="onClick()"> 静态onclick事件</button>
+    <button id="but">动态注册的onclick事件</button>
+</body>
+
+
+
+
+
+</html>

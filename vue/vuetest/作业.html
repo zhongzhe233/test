@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+        <style>
+            .lei1{
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div >
+           <ul id="mianBan">
+
+               <li :class="{'lei1':active1==index}" v-for="(item,index) in message" v-on:click="onclick(index)">{{item}} </li>
+           </ul>
+        </div>
+
+        <script src="./js/vue.js"></script>
+        <script>
+            const mianBan = new Vue({
+                el:'#mianBan',
+                data:{
+                    message:['百度','阿里','腾讯'],
+                    active1:-1,
+
+                },
+                methods:{
+                   onclick:function(index){
+                console.log("按下"+index+this.text+"active1");
+                this.active1=index;
+                
+
+
+                   }
+                }
+            })
+
+        </script>
+       
+    </body>
+
+</html>
